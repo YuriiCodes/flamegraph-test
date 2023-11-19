@@ -32,3 +32,17 @@ To create a SVG flamegraph for the optimised code:To create a SVG flamegraph for
 ```zsh
 ./FlameGraph/flamegraph.pl optimised-output.prof >optimised-flamegraph.svg 
 ```
+
+## Time taken to run the code:
+
+```zsh
+brew install gnu-time
+```
+
+```zsh
+gtime --verbose ./bin/optimised-main
+```
+
+```zsh
+gtime --verbose ./bin/unoptimised-main
+```
