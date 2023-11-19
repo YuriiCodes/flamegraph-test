@@ -36,8 +36,6 @@ func fibDynamic(n int) int {
 
 // optimised.main.go
 func main() {
-	n := 100 // Досить велике число для демонстрації неефективності
-
 	timeBefore := time.Now()
 	fmt.Printf("Фібоначчі оптимізоване(%d) = %d\n", n, fibDynamic(n))
 	timeAfter := time.Now()
